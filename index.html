@@ -21,17 +21,17 @@
             font-family: 'Poppins', sans-serif;
         }
 
+        
+
         nav {
             display: flex;
             justify-content: space-around;
             align-items: center;
-            background-color: #27a6ad;
-            height: 70px;
+            background-color: #000000;
+            height: 82px;
             font-weight: bold;
-            border-radius: 65px;
+            
         }
-
-
 
         nav ul {
             display: flex;
@@ -46,7 +46,7 @@
 
         nav ul li a {
             text-decoration: none;
-            color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
             cursor: pointer;
         }
 
@@ -56,8 +56,9 @@
             cursor: pointer;
         }
 
-        .left {
-            font-size: 1.5rem;
+        .logo img {
+            width: 215px;
+            height: 86px;
         }
 
         .firstSection {
@@ -274,10 +275,13 @@
 
     <header>
         <nav>
-            <div class="left">Umar's Portfolio</div>
+            <div class="logo">
+                <img src="logo.PNG" alt="">
+            </div>
+            
             <div class="right">
                 <ul>
-                    <li> <a href="/">Home</a></li>
+                    <li> <a onclick="scrollToFirstSection()">Home</a></li>
                     <li> <a onclick="scrollToSecondSection()">Programming Journey</a></li>
                     <li> <a onclick="scrollToSideHustleSection()">Side Hustle</a></li>
                 </ul>
@@ -419,6 +423,7 @@
     </footer>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
+
     <script>
 
         function goToGitHub() {
@@ -439,6 +444,11 @@
             link.download = 'UmarQaziCV.pdf'; // Specify the filename for the downloaded file
             link.click();
         }
+
+        function scrollToFirstSection() {
+            const firstSectionElement = document.querySelector('section:first-of-type');
+            firstSectionElement.scrollIntoView({ behavior: 'smooth' });
+          }
 
         function scrollToSecondSection() {
             const secondClassElement = document.querySelector('.secondSection');

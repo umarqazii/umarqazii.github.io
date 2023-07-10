@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umar Qazi Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(121 232 239 / 61%);
+            ;
+            color: black;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #27a6ad;
+            height: 70px;
+            font-weight: bold;
+            border-radius: 65px;
+        }
+
+
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            /* padding: 17px; */
+            margin: 0px 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+        }
+
+        nav ul li a:hover {
+            text-decoration: none;
+            color: #9f009f;
+            cursor: pointer;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .firstSection>div {
+            width: 35%;
+            height: 250px;
+        }
+
+        .leftSection {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 130px 145px
+        }
+
+        .rightSection img {
+            width: 65%;
+            margin: 103px 36px;
+        }
+
+        .secondSection {
+            max-width: 1000px;
+            margin: auto;
+            height: 90vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+
+        }
+
+        main hr {
+            border: 0;
+            background: #830879;
+            height: 2px;
+            margin: 39px 143px;
+        }
+
+        .text-gray {
+            margin-top: 30px;
+            color: gray;
+        }
+
+        .secondSection .box {
+            width: 990px;
+            background: #f9727e;
+            height: 7px;
+            margin: 80px 0px;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 97px;
+            width: 3px;
+            background: #f9727e;
+            margin: 6px 67px;
+        }
+
+        .image-top {
+            width: 29px;
+            position: relative;
+            top: -83px;
+            left: -23px;
+        }
+
+        .image-top1 {
+            width: 31px;
+            position: relative;
+            top: -121px;
+            left: 8px;
+        }
+
+        .vertical-title {
+            left: -53px;
+            position: relative;
+            top: 44px;
+            width: 140px;
+            font-weight: bold;
+        }
+
+        .vertical-desc {
+            left: -68px;
+            position: relative;
+            top: 48px;
+            width: 131px;
+            text-align: center;
+            font-size: x-small;
+        }
+
+        .endflag {
+            width: 58px;
+            top: 148px;
+            left: 975px;
+            position: relative;
+        }
+
+        .secondSection .car {
+            position: relative;
+            width: 32px;
+            top: 100px;
+            /* Initial position */
+            left: 732px;
+            /* Initial position */
+
+            animation-name: carMove;
+            animation-duration: 8s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .secondSection .car img {
+            width: 50px;
+        }
+
+        @keyframes carMove {
+            0% {
+                top: 100px;
+                left: 50px;
+            }
+
+            /* Initial position */
+            50% {
+                top: 100px;
+                left: 500px;
+            }
+
+            /* Intermediate position */
+            100% {
+                top: 100px;
+                left: 732px;
+            }
+
+            /* Final position */
+        }
+
+        .buttons {
+            margin: 25px 17px;
+        }
+
+        .github-btn {
+            background: none;
+            border: 0px;
+            cursor: pointer;
+        }
+
+        .git-img {
+            width: 40px;
+            margin: -13px 1px;
+            margin-right: 10px;
+        }
+
+        .fb-btn {
+            background: none;
+            border: 0px;
+            cursor: pointer;
+        }
+
+        .fb-img {
+            width: 40px;
+            margin: -14px 3px;
+        }
+
+        .insta-btn {
+            background: none;
+            border: 0px;
+            cursor: pointer;
+        }
+
+        .insta-img {
+            width: 40px;
+            margin: -14px 16px;
+        }
+
+        .cv-btn {
+            padding: 12px;
+            border: 2px solid black;
+            border-radius: 13px;
+            cursor: pointer;
+            background-color: #074144;
+            color: white;
+        }
+        
+        .sidehustleSection {
+            max-width: 1000px;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .business-text{
+            margin-top: 64px;
+        }
+
+        .crypto-text h1{
+            font-size: 2rem;
+        }
+
+        footer .rights{
+            background-color: #074144;
+            height: 40px;
+            text-align: center;
+            color: white;
+        }
+
+        
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Umar's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li> <a href="/">Home</a></li>
+                    <li> <a onclick="scrollToSecondSection()">Programming Journey</a></li>
+                    <li> <a onclick="scrollToSideHustleSection()">Side Hustle</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi! My name is <br><span class="typedName" style="color: #9f009f;"></span>
+                <div>and I am proficient in</div>
+
+                <span id="element" class="typedSkill" style="color: #9f009f;"></span>
+
+                <div class="buttons">
+
+                    <button class="fb-btn" onclick="goToFacebook()">
+                        <img class="fb-img" src="fb.png">
+                    </button>
+
+                    <button class="insta-btn" onclick="goToInstagram()">
+                        <img class="insta-img" src="insta.png">
+                    </button>
+
+                    <button class="github-btn" onclick="goToGitHub()">
+                        <img class="git-img" src="github.png">
+                    </button>
+
+                    <button onclick="downloadCV()" class="cv-btn">Download Resume</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="dp.png" alt="">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far...</span>
+            <h1>Programming Journey</h1>
+            <img class="endflag" src="endflag.png">
+
+            <div class="car">
+                <img src="car.png" alt="">
+            </div>
+
+            <div class="box">
+
+
+
+                <div class="vertical">
+                    <img class="image-top" src="c++.png">
+                    <img class="image-top1" src="html.png">
+                    <div class="vertical-title">
+                        1st Semester
+                    </div>
+                    <div class="vertical-desc">
+                        C++ and HTML Basics
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="c++.png">
+                    <img class="image-top1" src="oop.png">
+                    <div class="vertical-title">
+                        2nd Semester
+                    </div>
+                    <div class="vertical-desc">
+                        C++ Object Oriented Programming
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="dsa.png">
+                    <img class="image-top1" src="asm.png">
+                    <div class="vertical-title">
+                        3rd Semester
+                    </div>
+                    <div class="vertical-desc">
+                        Data Structures and Algorithms. <br> Assembly Language
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="sql.png">
+                    <img class="image-top1" src="c.png">
+                    <div class="vertical-title">
+                        4th Semester
+                    </div>
+                    <div class="vertical-desc">
+                        SQL Database <br> Multithreading in C Language
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="java.png">
+                    <img class="image-top1" src="Javafx.png">
+                    <div class="vertical-title">
+                        5th Semester
+                    </div>
+                    <div class="vertical-desc">
+                        Project in Java and JavaFX
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="python.png">
+                    <img class="image-top1" src="ai.png">
+                    <div class="vertical-title">
+                        6th Semester
+                    </div>
+                    <div class="vertical-desc">
+                        Python for Artificial Intelligence.<br>
+                        Parallel and Distributed Computing using MPI, OpenCL, Hadoop frameworks
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="sidehustleSection">
+            <div class="crypto-text">
+                <h1><b>Side Hustles</b></h1><br>
+                <h3><i>Cryptocurrency</i></h3>
+                <p id="cryptopara"></p>
+            </div>
+
+            <div class="business-text">
+                <h3><i>Entrepreneurial Experience</i></h3>
+                <p id="businesspara"></p>
+            </div>
+            
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="rights">
+                <p>Umar Qazi's Portfolio &copy; All Rights Reserved </p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+
+        function goToGitHub() {
+            window.open('https://github.com/umarqazii', '_blank');
+        }
+
+        function goToInstagram() {
+            window.open('https://instagram.com/umarqazii/', '_blank');
+        }
+
+        function goToFacebook() {
+            window.open('https://www.facebook.com/hafiz.umarqazi.7', '_blank');
+        }
+
+        function downloadCV() {
+            var link = document.createElement('a');
+            link.href = 'umarqazicv.pdf'; // Replace with the actual path to your PDF file
+            link.download = 'UmarQaziCV.pdf'; // Specify the filename for the downloaded file
+            link.click();
+        }
+
+        function scrollToSecondSection() {
+            const secondClassElement = document.querySelector('.secondSection');
+            secondClassElement.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToSideHustleSection() {
+            const secondClassElement = document.querySelector('.sidehustleSection');
+            secondClassElement.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        var typedName = new Typed('.typedName', {
+            strings: ['Umar Qazi'],
+            typeSpeed: 150,
+            showCursor: false,
+        });
+
+        var cryptopara = new Typed('#cryptopara', {
+            strings: ['Aside from computer science, one of my keen interests lies in the financial markets particularly the cryptocurrency market. I have been in this field since December 2021 and have learned technical analysis, market structure, risk management, and the basic set of skills required for success in financial markets. I have been investing in cryptocurrencies since December of 2021. I currently run two YouTube channels as well in which I am trying to teach the skills I have learned over the time which include Programming and my knowledge of the financial markets'],
+            typeSpeed: 5,
+            showCursor: false
+        });
+
+        var cryptopara = new Typed('#businesspara', {
+            strings: ['During the COVID-19 pandemic in 2020, I started a small business on FoodPanda (a food delivery service) where I cooked from home and delivered through the platform. This experience provided me with valuable entrepreneurial skills.'],
+            typeSpeed: 20,
+            showCursor: false
+        });
+    </script>
+
+
+    <script>
+        var typedSkill = new Typed('.typedSkill', {
+            strings: ['C/C++, Java, Python', 'HTML, CSS, JavaScript', 'SQL , MongoDB', 'Linux (Ubuntu)', 'Web Development'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
